@@ -1,11 +1,10 @@
 import React from 'react';
 import './style/GlobalStyles.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <h1>
-      <p>teste</p>
-    </h1>
+    <Header />
   );
 }
 
