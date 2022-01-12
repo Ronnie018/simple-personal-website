@@ -1,16 +1,33 @@
 import React from 'react';
-import { Header as StyledHeader, Nav as StyledNav, Ul as StyledUl } from './styled';
+import {
+  StyledHeader,
+  StyledNav,
+  StyledUl,
+  StyledLi,
+  StyledLink,
+
+} from './styled';
 
 function Header() {
   return (
     <StyledHeader>
       <StyledNav>
         <StyledUl>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
+          <StyledLi>
+            <StyledLink to="/">Home</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink to="/about">About</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink to="/books">Books</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink to="/media">Media</StyledLink>
+          </StyledLi>
+          <StyledLi>
+            <StyledLink to="/events">Events</StyledLink>
+          </StyledLi>
         </StyledUl>
       </StyledNav>
     </StyledHeader>
